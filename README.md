@@ -1,1 +1,1 @@
-SkillBridge
+skillbridge-project
