@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "SkillBridge project",
   "private": true,
-  "scripts": {
+"scripts": {
   "dev": "nodemon index.js",
-  "start": "node index.js"
-},
+  "start": "node index.js",
+  "test": "echo \"No tests defined yet\""
+}
+,
 
   "dependencies": {
     "express": "^5.2.1"
