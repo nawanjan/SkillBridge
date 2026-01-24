@@ -19,7 +19,7 @@
 </nav>
 
 <section id="about">
-    <h2>About Student IDs & Job Roles</h2>
+    <h2> Student IDs & Job Roles</h2>
     <p>ITBIN-2313-0094 A.G.N.D.RUPASINGHE - Devops Engineer </p>
     <p>ITBIN-2313-0127 W.M.R.T.NIMSARA - FrontEnd/BackEnd Developer </p>
 </section>
