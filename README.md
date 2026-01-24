@@ -19,6 +19,12 @@
 </nav>
 
 <section id="about">
+    <h2>About Student IDs & Job Roles</h2>
+    <p>ITBIN-2313-0094 A.G.N.D.RUPASINGHE - Devops Engineer </p>
+    <p>ITBIN-2313-0127 W.M.R.T.NIMSARA - FrontEnd/BackEnd Developer </p>
+</section>
+
+<section id="about">
     <h2>About SkillBridge</h2>
     <p>SkillBridge helps students develop real-world technical and professional skills.</p>
 </section>
@@ -35,7 +41,7 @@
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <button onclick="showMessage()">Click Me</button>
+    <button onclick="showMessage()"></button>
     <p id="message"></p>
 </section>
 
