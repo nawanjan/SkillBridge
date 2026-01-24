@@ -1,0 +1,243 @@
+.job-details-page {
+  flex: 1;
+  background-color: var(--background);
+  padding: 2rem;
+}
+
+.details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  color: var(--primary-dark);
+  transform: translateX(-5px);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  gap: 2rem;
+}
+
+.job-title-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.job-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.salary-badge {
+  background: linear-gradient(135deg, var(--secondary-color), #059669);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+}
+
+.job-content {
+  margin-bottom: 2rem;
+}
+
+.job-section {
+  margin-bottom: 2.5rem;
+}
+
+.job-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.job-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+
+.requirement-item {
+  margin-bottom: 1.5rem;
+}
+
+.requirement-item h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.requirement-item p {
+  color: var(--text-secondary);
+  margin-left: 2rem;
+}
+
+.skills-list,
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-left: 2rem;
+}
+
+.skill-tag,
+.language-tag {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.language-tag {
+  background-color: #fef3c7;
+  color: #f59e0b;
+}
+
+.action-section {
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-color);
+  text-align: center;
+}
+
+.apply-button {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--white);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-lg);
+}
+
+.apply-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.apply-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: var(--text-secondary);
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Loading and Error States */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 1rem;
+}
+
+.error-container h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.back-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.back-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .job-details-page {
+    padding: 1rem;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+  }
+
+  .job-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .job-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .salary-badge {
+    align-self: flex-start;
+  }
+
+  .skills-list,
+  .languages-list {
+    margin-left: 0;
+  }
+
+  .requirement-item p {
+    margin-left: 0;
+  }
+}
