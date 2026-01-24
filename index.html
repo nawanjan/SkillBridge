@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillBridge</title>
+
+  <!-- ✅ INTERNAL CSS -->
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f7fb;
+      color: #0f172a;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #334155;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #1e293b;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    #response {
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SkillBridge</h1>
+  <p>Connecting Skills to Opportunities</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About SkillBridge</h2>
+  <p>
+    SkillBridge is a student-focused platform designed to help learners
+    develop real-world technical and professional skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills Offered</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Programming</li>
+    <li>Networking</li>
+    <li>Soft Skills</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <input type="text" id="name" placeholder="Your Name">
+  <textarea id="message" placeholder="Your Message"></textarea>
+
+  <button onclick="sendMessage()">Send Message</button>
+  <p id="response"></p>
+</section>
+
+<footer>
+  <p>© 2026 SkillBridge</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
