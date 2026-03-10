@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+
+  skillbridge-app:
+    build: .
+    container_name: skillbridge_container
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      - NODE_ENV=production
+
+    restart: unless-stopped
+
+    volumes:
+      - .:/app
+
+    networks:
+      - skillbridge-network
+
+
+networks:
+  skillbridge-network:

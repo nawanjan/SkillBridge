@@ -53,3 +53,23 @@
 </body>
 </html>
 
+## Docker Setup
+Prerequisites
+
+Docker installed
+
+## Build Docker Image
+docker build -t skillbridge .
+## Run the Container
+docker run -p 3000:3000 skillbridge
+## Access the Application
+
+Open your browser:
+
+http://localhost:3000
+Stop the Container
+
+Press:
+
+CTRL + C
+
